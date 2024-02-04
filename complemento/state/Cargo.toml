@@ -1,0 +1,25 @@
+[package]
+name = "document_contract"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ink_lang = "3.0"
+serde = "1"
+
+//
+
+[workspace]
+members = ["document_contract"]
+
+[package]
+name = "document_contract"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = ["std"]
+
+[dependencies]
+ink_lang = { version = "3.0", package = "ink", git = "https://github.com/paritytech/ink", branch = "master" }
+serde = "1"
